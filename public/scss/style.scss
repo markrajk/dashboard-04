@@ -1666,34 +1666,27 @@ a:focus {
   & .modal {
     
     &-content {
-      border-radius: .8rem;
-      border: 0;
+      margin: auto;
+      border-radius: .3rem;
+      //border: 0;
     }
 
-    // &-dialog {
-      
-    // }
+    &-dialog {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      max-width: 50rem;
+    }
 
     &-header {
       padding: 2.2rem;
       display: flex;
       align-items: center;
-      border-bottom: none;
-      & img {
-        margin-right: 1.1rem;
-        width: 5.8rem;
-        height: 5.8rem;
-        border-radius: 50%;
-      }
+      border: 0;
 
       & h5 {
-        margin-bottom: .2rem;
-        font-size: 1.15rem;
-        font-weight: 500;
-        line-height: 1.22;
-        letter-spacing: 0.07px;
-        color: #007aff;
-        text-transform: uppercase;
+        font-size: 1.8rem;
+        line-height: 1.33;
+        color: #3d464d;
 
         & .name {
           display: block;
@@ -1713,11 +1706,41 @@ a:focus {
     }
 
     &-body {
+      padding-top: 3.4rem;
       padding-bottom: 6rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: #f6f9fc;
+
+      & .input-container {
+        max-width: 43.6rem;
+        width: 100%;
+
+        & label {
+          margin-bottom: .5rem;
+          display: block;
+          font-size: 1.3rem;
+          line-height: 1.38;
+          color: #3d464d;
+        }
+
+        & input {
+          padding: .9rem 1.2rem;
+          width: 100%;
+          font-size: 1.2rem;
+          line-height: 1.33;
+          border-radius: 3px;
+          border: solid 1px #bdc4c9;
+          background-color: #ffffff;
+          outline: none;
+
+          &::placeholder {
+            color: #a0a0a0;
+          }
+        }
+      }
 
       & .btn-custom-primary {
         margin-top: 3.7rem;
@@ -1728,6 +1751,28 @@ a:focus {
         border-radius: 1.8rem;
         background-color: #1a9cfc;
         border: 0;
+      }
+    }
+
+    &-footer {
+      padding: 0 2.2rem;
+      padding-bottom: 4rem;
+      border: 0;
+      background-color: #f6f9fc;
+
+      & .btn-custom-primary {
+        padding: .7rem 1.4rem;
+        border-radius: .4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.36;
+        color: #ffffff;
+
+        &.outline {
+          font-weight: 500;
+          color: #48525d;
+          border-color: #bbbbbb;
+        }
       }
     }
   }
@@ -1973,13 +2018,14 @@ a:focus {
   & .modal {
     
     &-content {
+      margin: auto;
       border-radius: 1.7rem;
       border: 0;
     }
 
     &-dialog {
-      
-      //max-width: 71.7rem!important;
+      padding-left: 1rem;
+      padding-right: 1rem;
       max-width: 62rem!important;
     }
 
@@ -1996,7 +2042,7 @@ a:focus {
       }
 
       & h5 {
-        margin-bottom: .2rem;
+        //margin-bottom: rem;
         font-size: 1.15rem;
         font-weight: 500;
         line-height: 1.22;
@@ -2005,6 +2051,7 @@ a:focus {
         text-transform: uppercase;
 
         & .name {
+          margin-top: .5rem;
           display: block;
           font-size: 2.6rem;
           font-weight: 700;
