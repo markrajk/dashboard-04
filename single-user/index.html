@@ -129,386 +129,426 @@
 
             </header>
 
-            <main class="teams-main-view">
-                <div class="teams-main-view-header">
-                    <a href="#" class="btn-custom-primary">Invite new member</a>
-                    <div class="input-container">
-                        <i class="icon-c-search"></i>
-                        <input type="text" placeholder="Search...">
+            <main class="single-user">
+                <div class= "single-user-header">
+                    <div class="single-user-header-info">
+                        <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                        <p class="name text-truncate">Juulia Martinez <span class="email">julia.martinez@gmail.com</span></p>
                     </div>
+                    <a class="export-pdf" href="#">Export PDF</a>
                 </div>
-                <div class="teams-main-view-body">
-                    <div class="graph-card  text-truncate card-0">
-                        <div class="graph-card-header">
-                            <h4>Overall Average</h4>
-                            <h3 class="text-truncate">Total development</h3>
+                <div class="single-user-body">
+
+                    <section class="section section-averages">
+                        <div class="section-header">
+                            <p>Two week averages</p>
                         </div>
-                        <div class="graph-card-body">
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                <div class="bar-info">JAN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                <div class="bar-info">FEB</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">MAR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                <div class="bar-info">APR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                <div class="bar-info">MAY</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">JUN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                <div class="bar-info">JUL</div>
-                            </div>
-                            
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                <div class="bar-info">AUG</div>
+                        <div class="section-body">
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Teamworking</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="fas fa-arrow-up"></i>
+                                        20% improvement
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill good" fill-progress="70"></div>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                <div class="bar-info">SEP</div>
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Productivity</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="fas fa-arrow-up"></i>
+                                        20% improvement
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="60"></div>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">OCT</div>
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Amount of given feedback</p>
+                                <div class="progress-custom-info">
+                                    <h3>Ok</h3>
+                                    <p class="down">
+                                        <i class="fas fa-arrow-down"></i>
+                                        20% break down
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-development">
+                        <div class="section-header">
+                            <p>Longterm development</p>
+                        </div>
+                        <div class="section-body">
+                            <div class="graph-card  text-truncate">
+                                <div class="graph-card-header">
+                                    <h3 class="text-truncate">Teamworking</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">JAN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">FEB</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">MAR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">APR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">MAY</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">JUN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">JUL</div>
+                                    </div>
+                                    
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">AUG</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">SEP</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">OCT</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">NOV</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">DEC</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">NOV</div>
+                            <div class="graph-card  text-truncate">
+                                <div class="graph-card-header">
+                                    <h3 class="text-truncate">Productivity</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">JAN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">FEB</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">MAR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">APR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">MAY</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">JUN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">JUL</div>
+                                    </div>
+                                    
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">AUG</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">SEP</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">OCT</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">NOV</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">DEC</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                <div class="bar-info">DEC</div>
+                            <div class="graph-card  text-truncate">
+                                <div class="graph-card-header">
+                                    <h3 class="text-truncate">Amount of given feedback</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">JAN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">FEB</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">MAR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">APR</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">MAY</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">JUN</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">JUL</div>
+                                    </div>
+                                    
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">AUG</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">SEP</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">OCT</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">NOV</div>
+                                    </div>
+        
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">DEC</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="graph-card  text-truncate card-1">
-                        <div class="graph-card-header">
-                            <h4>Average opinion</h4>
-                            <h3 class="text-truncate">Teamworking</h3>
+                    <section class="section section-comments">
+                        <div class="section-header">
+                            <p>Latest comments</p>
                         </div>
-                        <div class="graph-card-body">
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                <div class="bar-info">JAN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                <div class="bar-info">FEB</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">MAR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                <div class="bar-info">APR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                <div class="bar-info">MAY</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">JUN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                <div class="bar-info">JUL</div>
-                            </div>
-                            
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                <div class="bar-info">AUG</div>
-                            </div>
+                        <div class="section-body">
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                <div class="bar-info">SEP</div>
-                            </div>
-
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">OCT</div>
-                            </div>
-
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">NOV</div>
-                            </div>
-
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                <div class="bar-info">DEC</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="graph-card  text-truncate card-2">
-                        <div class="graph-card-header">
-                            <h4>Average opinion</h4>
-                            <h3 class="text-truncate">Productivity</h3>
-                        </div>
-                        <div class="graph-card-body">
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                <div class="bar-info">JAN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                <div class="bar-info">FEB</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">MAR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                <div class="bar-info">APR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                <div class="bar-info">MAY</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">JUN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                <div class="bar-info">JUL</div>
-                            </div>
-                            
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                <div class="bar-info">AUG</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Suzie Hunyh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Plese clearer instructions.</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                <div class="bar-info">SEP</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Aleksandra Cermanovic</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita numquam saepe atque quas maxime vel cum aut voluptas doloremque!</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">OCT</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Ellen Schromberh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">More realistic goals.</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">NOV</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Suzie Hunyh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Plese clearer instructions.</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                <div class="bar-info">DEC</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="graph-card  text-truncate card-3">
-                        <div class="graph-card-header">
-                            <h4>Team Members Opinion About</h4>
-                            <h3 class="text-truncate">Team lead</h3>
-                        </div>
-                        <div class="graph-card-body">
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                <div class="bar-info">JAN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                <div class="bar-info">FEB</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">MAR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                <div class="bar-info">APR</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                <div class="bar-info">MAY</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                <div class="bar-info">JUN</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                <div class="bar-info">JUL</div>
-                            </div>
-                            
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                <div class="bar-info">AUG</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Aleksandra Cermanovic</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita numquam saepe atque quas maxime vel cum aut voluptas doloremque!</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                <div class="bar-info">SEP</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Ellen Schromberh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">More realistic goals.</p>
+                                </div>
+                            </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Suzie Hunyh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Plese clearer instructions.</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">OCT</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Aleksandra Cermanovic</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita numquam saepe atque quas maxime vel cum aut voluptas doloremque!</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                <div class="bar-info">NOV</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Ellen Schromberh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">More realistic goals.</p>
+                                </div>
+                            </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Suzie Hunyh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Plese clearer instructions.</p>
+                                </div>
                             </div>
 
-                            <div class="bar">
-                                <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                <div class="bar-info">DEC</div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Aleksandra Cermanovic</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita numquam saepe atque quas maxime vel cum aut voluptas doloremque!</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                <div class="graph-card  text-truncate card-4">
-                    <div class="graph-card-header">
-                        <h4>Amount of</h4>
-                        <h3 class="text-truncate">Given feedback</h3>
-                    </div>
-                    <div class="graph-card-body">
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                            <div class="bar-info">JAN</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                            <div class="bar-info">FEB</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                            <div class="bar-info">MAR</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                            <div class="bar-info">APR</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                            <div class="bar-info">MAY</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                            <div class="bar-info">JUN</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                            <div class="bar-info">JUL</div>
-                        </div>
-                        
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                            <div class="bar-info">AUG</div>
-                        </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Ellen Schromberh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">More realistic goals.</p>
+                                </div>
+                            </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Suzie Hunyh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Plese clearer instructions.</p>
+                                </div>
+                            </div>
 
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                            <div class="bar-info">SEP</div>
-                        </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Aleksandra Cermanovic</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita numquam saepe atque quas maxime vel cum aut voluptas doloremque!</p>
+                                </div>
+                            </div>
 
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                            <div class="bar-info">OCT</div>
-                        </div>
+                            <div class="comment-container text-truncate">
+                                <img src="../public/img/user-placeholder.png" alt="User's profile image">
+                                <div class="comment text-truncate">
+                                    <div class="comment-header">
+                                        <p class="name text-truncate">Ellen Schromberh</p>
+                                        <p class="when">Just now</p>
+                                    </div>
+                                    <p class="comment-text text-truncate">More realistic goals.</p>
+                                </div>
+                            </div>
 
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                            <div class="bar-info">NOV</div>
                         </div>
+                    </section>
 
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                            <div class="bar-info">DEC</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="graph-card  text-truncate card-5">
-                    <div class="graph-card-header">
-                        <h4>Average opinion</h4>
-                        <h3 class="text-truncate">Happiness in team</h3>
-                    </div>
-                    <div class="graph-card-body">
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                            <div class="bar-info">JAN</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                            <div class="bar-info">FEB</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                            <div class="bar-info">MAR</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                            <div class="bar-info">APR</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                            <div class="bar-info">MAY</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                            <div class="bar-info">JUN</div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                            <div class="bar-info">JUL</div>
-                        </div>
-                        
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                            <div class="bar-info">AUG</div>
-                        </div>
-
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                            <div class="bar-info">SEP</div>
-                        </div>
-
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                            <div class="bar-info">OCT</div>
-                        </div>
-
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                            <div class="bar-info">NOV</div>
-                        </div>
-
-                        <div class="bar">
-                            <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                            <div class="bar-info">DEC</div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </main>
         </div>
@@ -517,315 +557,15 @@
         <script src="../public/js/jquery-3.4.1.min.js"></script>
         <script src="../public/js/bootstrap.bundle.js"></script>
         <script src="../public/js/main.js"></script>
+
+        <script>
+            // ANIMATE PROGRESS BAR
+            window.addEventListener('load', function() {
+                document.querySelectorAll('.progress-custom-bar-fill').forEach(e => {
+                    e.style.width = `${e.getAttribute('fill-progress')}%`;
+                })
+            })
+        </script>
+
 </body>
-
 </html>
-
-
-<!-- <div class="card-4">
-                    <div class="table">
-                        <div class="table-header">
-                            <h3>How people are doing in this team</h3>
-                        </div>
-                        <div class="table-body">
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table green">Great</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table green">Great</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table green">Great</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table green">Great</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table green">Great</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table yellow">Ok</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table yellow">Ok</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table yellow">Ok</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table yellow">Ok</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table red">Bad</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table red">Bad</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table red">Bad</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="table-row">
-                                <div class="table-row-item">
-                                    <img src="../public/img/p-01.png" class="table-row-item-img" alt="users image">
-                                    <a href="#" class="table-row-item-name">Ollie Stewart</a>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-prof">Software Architect</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <span class="table-row-item-email">ollie.stewart@gmail.com</span>
-                                </div>
-    
-                                <div class="table-row-item">
-                                    <a href="#" class="btn-custom-table red">Bad</a>
-                                </div>
-    
-                                <div class="table-row-item arrow">
-                                    <a href="#" class="table-row-item-arrow"><i class="icon-c-chevron-l"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->

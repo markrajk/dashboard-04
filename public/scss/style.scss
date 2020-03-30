@@ -2021,6 +2021,365 @@ a:focus {
 
 
 
+// ==================================
+// SINGLE USER START
+// ==================================
+.single-user {
+  max-width: 101.6rem;
+  padding:2.5rem 0;
+  margin:0 3.6rem;
+  margin-left: 4.2rem;
+  border-top: 1px solid #e1e1e1;
+  max-height: calc(100vh - 20rem);
+
+  overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+
+  &-header {
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info {
+      display: inline-flex;
+      align-items: center;
+
+      & img {
+        margin-left: .5rem;
+        margin-right: 1rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+      }
+
+      & .name {
+        margin-bottom: .3rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.31;
+        color: #252525;
+
+        & .email {
+          display: block;
+          font-size: 1.3rem;
+          line-height: 1.38;
+          color: #383838;
+        }
+      }
+    }
+
+    & .export-pdf {
+      align-self: flex-end;
+      font-size: 1.4rem;
+      line-height: 1.36;
+      color: #1267fb;
+    }
+  }
+
+  &-body {
+
+    & .section {
+
+      &-header {
+        margin-bottom: 2.2rem;
+        padding: 1rem 1.2rem;
+        background-color: #f5f7f8;
+
+        & p {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.33;
+          color: #647282;
+        }
+      }
+
+      &-body {
+        padding: 0 1.2rem;
+      }
+    }
+
+    & .section-averages {
+      margin-bottom: 4.3rem;
+
+      & .section-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 6rem;
+
+        & .progress-custom {
+
+          &-sub {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #818181;
+          }
+
+          &-info {
+            margin-bottom: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & h3 {
+              font-size: 3rem;
+              font-weight: 700;
+              line-height: 1.3;
+              color: #1f1f1f;
+            }
+
+            & .up,
+            & .down {
+              font-size: 1.2rem;
+              font-weight: 500;
+              line-height: 1.33;
+
+              & i {
+                font-size: .8rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.6rem;
+                height: 1.6rem;
+                color: #fff;
+                border-radius: 50%;
+              }
+            }
+
+            & .up {
+              color: #137efe;
+
+              & i {
+                background-color: #137efe;
+              }
+            }
+
+            & .down {
+              color: #ff5555;
+
+              & i {
+                background-color: #ff5555;
+              }
+            }
+          }
+
+          &-bar {
+            width: 100%;
+            height: 1.46rem;
+            border-radius: .6rem;
+            background-color: #ecf0f6;
+
+            &-fill {
+              width: 0%;
+              height: 100%;
+              border-radius: .6rem;
+              transition: width .8s ease-out .1s;
+
+              &.good {
+                background: linear-gradient(to right, #50e22d -26%, #99e46d 58%);
+              }
+
+              &.ok {
+                background: linear-gradient(to right, #ffd00a -26%, #ffc812 58%);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-development {
+      margin-bottom: 3rem;
+      & .section-header {
+        margin-bottom: 4.5rem;
+      }
+
+      & .section-body {
+        padding: 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 0;
+        margin-bottom: 2rem;
+       
+      }
+      
+      & .graph-card {
+        padding: 0 4rem;
+        height: 24rem;
+
+        &-header {
+          height: auto;
+          padding: 0;
+    
+          & h3 {
+              margin-bottom: 0;
+              font-size: 2rem;
+              font-weight: 500;
+              line-height: 1.15;
+              letter-spacing: 0.2px;
+              color: #1c1c1c;
+          }
+        }
+
+        &-body {
+          padding-top: 2.7rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          height: calc(100% - 1.6rem);
+
+          & .bar,
+          & .bar-fill {
+            border-radius: .6rem;
+            width: 1.8rem;
+
+            &-info {
+              bottom: -.8rem;
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          border-left: 1px solid #E1E1E1;
+          border-right: 1px solid #E1E1E1;
+        }
+      }
+    }
+
+    & .section-comments {
+
+      & .section-header {
+        margin-bottom: 0;
+      }
+
+      & .section-body {
+        padding-top: 2.2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+        grid-gap: 3rem 14rem;
+        max-height: 31.2rem;
+
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+          /* WebKit */
+          width: 0;
+          height: 0;
+        }
+
+        & .comment-container  {
+          display: inline-flex;
+          align-items: center;
+          & img {
+            margin-right: 1.27rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+          }
+
+          & .comment {
+            width: 100%;
+
+            &-header {
+              margin-bottom: .4rem;
+              font-size: 1.4rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              & .name {
+                margin-right: .5rem;
+                font-weight: 700;
+                line-height: 1.36;
+                color: #0d0e0d;
+              }
+
+              & .when {
+                line-height: 1.36;
+                letter-spacing: -0.27px;
+                color: #657383;
+              }
+            }
+
+            &-text {
+              font-size: 1.3rem;
+              line-height: 1.38;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  & .graph-card {
+
+    &-body { 
+
+      .bar {
+          &:first-of-type,
+          &:first-of-type + .bar,
+          &:first-of-type + .bar + .bar,
+          &:first-of-type + .bar + .bar + .bar,
+          &:first-of-type + .bar + .bar + .bar + .bar {
+            display: none;
+          }
+
+          @include respond(desktop-xl) {
+            &:first-of-type + .bar + .bar + .bar + .bar + .bar {
+              display: none;
+            }
+          }
+
+          @include respond(desktop-lg) {
+            &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+              display: none;
+            }
+          }
+
+          @include respond(desktop-md) {
+            &:first-of-type + .bar + .bar + .bar + .bar + .bar,
+            &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+              display: inline-block;
+            }
+          }
+
+          @include respond(desktop-xsm) {
+            &:first-of-type + .bar,
+            &:first-of-type + .bar + .bar,
+            &:first-of-type + .bar + .bar + .bar,
+            &:first-of-type + .bar + .bar + .bar + .bar {
+              display: inline-block;
+            }
+          }
+
+          @include respond(desktop-xxsm) {
+            &:first-of-type + .bar,
+            &:first-of-type + .bar + .bar {
+              display: none;
+            }
+          }
+        }
+      }
+  }
+}
+// ==================================
+// SINGLE USER END
+// ==================================
+
+
+
 // // ==================================
 // // GIVE FEEDBACK START
 // // ==================================
