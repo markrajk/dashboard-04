@@ -956,6 +956,53 @@ a:focus {
   .teams-people-view .panel-body .table-header-fixed-col-4 {
     font-size: 1.3rem;
     color: #647282; }
+  .teams-people-view .modal-content {
+    border-radius: .8rem;
+    border: 0; }
+  .teams-people-view .modal-header {
+    padding: 2.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: none; }
+    .teams-people-view .modal-header img {
+      margin-right: 1.1rem;
+      width: 5.8rem;
+      height: 5.8rem;
+      border-radius: 50%; }
+    .teams-people-view .modal-header h5 {
+      margin-bottom: .2rem;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.22;
+      letter-spacing: 0.07px;
+      color: #007aff;
+      text-transform: uppercase; }
+      .teams-people-view .modal-header h5 .name {
+        display: block;
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 1.08;
+        letter-spacing: 0.26px;
+        color: #000000;
+        text-transform: capitalize; }
+    .teams-people-view .modal-header .close {
+      font-size: 2rem;
+      align-self: flex-start; }
+  .teams-people-view .modal-body {
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .teams-people-view .modal-body .btn-custom-primary {
+      margin-top: 3.7rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.31;
+      color: #ffffff;
+      border-radius: 1.8rem;
+      background-color: #1a9cfc;
+      border: 0; }
 
 .teams-settings-general {
   padding: 2.5rem 0;
@@ -1111,10 +1158,10 @@ a:focus {
           line-height: 1.36;
           color: #000000; }
   .give-feedback .modal-content {
-    border-radius: .8rem;
+    border-radius: 1.7rem;
     border: 0; }
   .give-feedback .modal-dialog {
-    max-width: 71.7rem !important; }
+    max-width: 62rem !important; }
   .give-feedback .modal-header {
     padding: 2.2rem;
     display: flex;
@@ -1151,7 +1198,7 @@ a:focus {
     justify-content: center;
     align-items: center; }
     .give-feedback .modal-body .rating {
-      margin-top: 4rem;
+      margin-top: 2rem;
       text-align: center; }
       .give-feedback .modal-body .rating p {
         margin-bottom: 1.5rem;
@@ -1161,7 +1208,7 @@ a:focus {
         color: #000000; }
     .give-feedback .modal-body .input-container {
       width: 100%;
-      max-width: 41rem;
+      max-width: 42rem;
       margin-top: 3.8rem; }
       .give-feedback .modal-body .input-container label {
         display: block;
@@ -1182,6 +1229,7 @@ a:focus {
         .give-feedback .modal-body .input-container input::placeholder {
           color: rgba(20, 40, 64, 0.3); }
     .give-feedback .modal-body .btn-custom-primary {
+      padding: .5em 2.2em;
       margin-top: 3.7rem;
       font-size: 1.6rem;
       font-weight: 500;

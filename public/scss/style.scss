@@ -1662,6 +1662,75 @@ a:focus {
       }
     }
   }
+
+  & .modal {
+    
+    &-content {
+      border-radius: .8rem;
+      border: 0;
+    }
+
+    // &-dialog {
+      
+    // }
+
+    &-header {
+      padding: 2.2rem;
+      display: flex;
+      align-items: center;
+      border-bottom: none;
+      & img {
+        margin-right: 1.1rem;
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+      }
+
+      & h5 {
+        margin-bottom: .2rem;
+        font-size: 1.15rem;
+        font-weight: 500;
+        line-height: 1.22;
+        letter-spacing: 0.07px;
+        color: #007aff;
+        text-transform: uppercase;
+
+        & .name {
+          display: block;
+          font-size: 2.6rem;
+          font-weight: 700;
+          line-height: 1.08;
+          letter-spacing: 0.26px;
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+
+      & .close {
+        font-size: 2rem;
+        align-self: flex-start;
+      }
+    }
+
+    &-body {
+      padding-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .btn-custom-primary {
+        margin-top: 3.7rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.31;
+        color: #ffffff;
+        border-radius: 1.8rem;
+        background-color: #1a9cfc;
+        border: 0;
+      }
+    }
+  }
 }
 // ==================================
 // TEAM MEMBERS END
@@ -1904,13 +1973,14 @@ a:focus {
   & .modal {
     
     &-content {
-      border-radius: .8rem;
+      border-radius: 1.7rem;
       border: 0;
     }
 
     &-dialog {
       
-      max-width: 71.7rem!important;
+      //max-width: 71.7rem!important;
+      max-width: 62rem!important;
     }
 
     &-header {
@@ -1959,7 +2029,7 @@ a:focus {
       align-items: center;
 
       & .rating {
-        margin-top: 4rem;
+        margin-top: 2rem;
         text-align: center;
 
         & p {
@@ -1973,7 +2043,7 @@ a:focus {
 
       & .input-container {
         width: 100%;
-        max-width: 41rem;
+        max-width: 42rem;
         margin-top: 3.8rem;
 
         & label {
@@ -2003,6 +2073,7 @@ a:focus {
       }
 
       & .btn-custom-primary {
+        padding: .5em 2.2em;
         margin-top: 3.7rem;
         font-size: 1.6rem;
         font-weight: 500;
