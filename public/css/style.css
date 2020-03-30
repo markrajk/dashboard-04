@@ -1021,10 +1021,11 @@ a:focus {
       .teams-settings-general-body .settings-table-row:not(:last-child) {
         border-bottom: 1px solid #E6E8EB; }
       .teams-settings-general-body .settings-table-row:last-child {
-        padding-bottom: 5rem; }
+        padding-bottom: 4rem; }
     .teams-settings-general-body .settings-table:nth-of-type(2) .settings-table-row {
       padding-top: 3rem;
-      padding-bottom: 2.3rem; }
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #E6E8EB; }
 
 @media (max-width: 1024px) {
   body,
