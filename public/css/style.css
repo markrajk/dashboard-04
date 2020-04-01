@@ -363,7 +363,7 @@ a:focus {
   .stars label {
     display: block;
     cursor: pointer;
-    width: 4rem;
+    width: 3.7rem;
     color: #c3c3c3; }
     .stars label::before {
       content: "\f005";
@@ -1199,19 +1199,22 @@ a:focus {
   .give-feedback .modal-dialog {
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 62rem !important; }
+    width: 100%;
+    max-width: 73.7rem !important;
+    margin: auto; }
   .give-feedback .modal-header {
     padding: 2.2rem;
     display: flex;
     align-items: center;
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: 2rem; }
     .give-feedback .modal-header img {
       margin-right: 1.1rem;
-      width: 5.8rem;
-      height: 5.8rem;
+      width: 5.3rem;
+      height: 5.3rem;
       border-radius: 50%; }
     .give-feedback .modal-header h5 {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 500;
       line-height: 1.22;
       letter-spacing: 0.07px;
@@ -1220,7 +1223,7 @@ a:focus {
       .give-feedback .modal-header h5 .name {
         margin-top: .5rem;
         display: block;
-        font-size: 2.6rem;
+        font-size: 2.15rem;
         font-weight: 700;
         line-height: 1.08;
         letter-spacing: 0.26px;
@@ -1230,24 +1233,26 @@ a:focus {
       font-size: 2rem;
       align-self: flex-start; }
   .give-feedback .modal-body {
+    padding: 2rem;
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     .give-feedback .modal-body .rating {
-      margin-top: 2rem;
       text-align: center; }
       .give-feedback .modal-body .rating p {
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
         font-size: 1.9rem;
         font-weight: 500;
         line-height: 1.32;
         color: #000000; }
+      .give-feedback .modal-body .rating:first-of-type {
+        margin-bottom: 3.7rem; }
     .give-feedback .modal-body .input-container {
       width: 100%;
       max-width: 42rem;
-      margin-top: 3.8rem; }
+      margin-top: 5rem; }
       .give-feedback .modal-body .input-container label {
         display: block;
         font-size: 1.3rem;
@@ -1257,18 +1262,23 @@ a:focus {
         color: #2d2d2d; }
       .give-feedback .modal-body .input-container input {
         width: 100%;
-        padding: .85rem 0;
-        font-size: 1.6rem;
+        padding: 1rem 0;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.31;
         border: 0;
         border-bottom: 1px solid #DFE0E2;
-        outline: none; }
+        outline: none;
+        color: #142840; }
         .give-feedback .modal-body .input-container input::placeholder {
           color: rgba(20, 40, 64, 0.3); }
+      .give-feedback .modal-body .input-container:nth-of-type(4) {
+        color: red !important;
+        margin-top: 2.7rem; }
     .give-feedback .modal-body .btn-custom-primary {
       padding: .5em 2.2em;
-      margin-top: 3.7rem;
+      margin-top: 3.2rem;
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.31;
