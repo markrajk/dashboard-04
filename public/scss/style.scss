@@ -2144,9 +2144,7 @@ a:focus {
 // ==================================
 .single-user {
   max-width: 101.6rem;
-  padding:2.5rem 0;
-  margin:0 3.6rem;
-  margin-left: 4.2rem;
+  padding:2.5rem 3.6rem;
   border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
 
@@ -2161,12 +2159,12 @@ a:focus {
     }
 
   &-header {
-    margin-bottom: 2.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &-info {
+      margin-right: .5rem;
       display: inline-flex;
       align-items: center;
 
@@ -2193,18 +2191,20 @@ a:focus {
         }
       }
     }
+  }
 
-    & .export-pdf {
-      align-self: flex-end;
-      font-size: 1.4rem;
-      line-height: 1.36;
-      color: #1267fb;
-    }
+  & .export-pdf {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.36;
+    color: #1267fb;
   }
 
   &-body {
 
     & .section {
+      position: relative;
 
       &-header {
         margin-bottom: 2.2rem;
@@ -2220,19 +2220,58 @@ a:focus {
       }
 
       &-body {
-        padding: 0 1.2rem;
+        //padding: 0 1.2rem;
+        overflow: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+          /* WebKit */
+          width: 0;
+          height: 0;
+    }
+      }
+
+      & .slider-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        color: #647282;
+        background-color: #FFF;
+        border: .5px solid #647282;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        cursor: pointer;
+
+        &-left {
+          left: -1rem;
+        }
+
+        &-right {
+          right: -1rem;
+        }
       }
     }
 
     & .section-averages {
       margin-bottom: 4.3rem;
 
+
       & .section-body {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 6rem;
+        grid-template-columns: repeat(3, minmax(22rem, 1fr));
+
+        @include respond(desktop-xxsm) {
+          grid-template-columns: repeat(3, 100%);
+        }
 
         & .progress-custom {
+         padding: 0 2rem;
 
           &-sub {
             font-size: 1.2rem;
@@ -2249,6 +2288,7 @@ a:focus {
             align-items: center;
 
             & h3 {
+              margin-right: 1rem;
               font-size: 3rem;
               font-weight: 700;
               line-height: 1.3;
@@ -2324,9 +2364,13 @@ a:focus {
       & .section-body {
         padding: 0 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
         grid-gap: 0 0;
         margin-bottom: 2rem;
+
+        @include respond(desktop-xxsm) {
+          grid-template-columns: repeat(3, 100%);
+        }
        
       }
       
@@ -2368,6 +2412,10 @@ a:focus {
         &:nth-of-type(2) {
           border-left: 1px solid #E1E1E1;
           border-right: 1px solid #E1E1E1;
+
+          @include respond(desktop-xxsm) {
+            border: 0;
+          }
         }
       }
     }
@@ -2379,10 +2427,10 @@ a:focus {
       }
 
       & .section-body {
-        padding: 2.2rem;
+        padding: 1rem 0;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
-        grid-gap: 3rem 14rem;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        //grid-gap: 3rem 14rem;
         max-height: 31.2rem;
 
         overflow-y: scroll;
@@ -2396,6 +2444,7 @@ a:focus {
         }
 
         & .comment-container  {
+          margin: 2.2rem;
           display: inline-flex;
           align-items: center;
           & img {
@@ -2454,40 +2503,48 @@ a:focus {
             display: none;
           }
 
-          @include respond(desktop-xl) {
-            &:first-of-type + .bar + .bar + .bar + .bar + .bar {
-              display: none;
-            }
-          }
+          // @include respond(desktop-xl) {
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar {
+          //     display: none;
+          //   }
+          // }
+
+          // @include respond(desktop-lg) {
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+          //     display: none;
+          //   }
+          // }
+
+          // @include respond(desktop-md) {
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar,
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+          //     display: inline-block;
+          //   }
+          // }
 
           @include respond(desktop-lg) {
-            &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
-              display: none;
-            }
-          }
-
-          @include respond(desktop-md) {
             &:first-of-type + .bar + .bar + .bar + .bar + .bar,
             &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
               display: inline-block;
             }
           }
 
-          @include respond(desktop-xsm) {
-            &:first-of-type + .bar,
-            &:first-of-type + .bar + .bar,
-            &:first-of-type + .bar + .bar + .bar,
-            &:first-of-type + .bar + .bar + .bar + .bar {
-              display: inline-block;
-            }
-          }
+          // @include respond(desktop-xsm) {
+          //   &:first-of-type + .bar,
+          //   &:first-of-type + .bar + .bar,
+          //   &:first-of-type + .bar + .bar + .bar,
+          //   &:first-of-type + .bar + .bar + .bar + .bar {
+          //     display: inline-block;
+          //   }
+          // }
 
-          @include respond(desktop-xxsm) {
-            &:first-of-type + .bar,
-            &:first-of-type + .bar + .bar {
-              display: none;
-            }
-          }
+          // @include respond(desktop-xxsm) {
+          //   &:first-of-type + .bar,
+          //   &:first-of-type + .bar + .bar,
+          //   &:first-of-type + .bar + .bar + .bar {
+          //     display: none;
+          //   }
+          // }
         }
       }
   }

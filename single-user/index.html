@@ -135,20 +135,22 @@
                         <img src="../public/img/user-placeholder.png" alt="User's profile image">
                         <p class="name text-truncate">Juulia Martinez <span class="email">julia.martinez@gmail.com</span></p>
                     </div>
-                    <a class="export-pdf" href="#">Export PDF</a>
                 </div>
+                <p class="text-right">
+                    <a class="export-pdf" href="#">Export PDF</a>
+                </p>
                 <div class="single-user-body">
 
-                    <section class="section section-averages">
+                    <section class="section section-averages slider">
                         <div class="section-header">
                             <p>Two week averages</p>
                         </div>
                         <div class="section-body">
-                            <div class="progress-custom">
+                            <div class="progress-custom slider-item">
                                 <p class="progress-custom-sub">Teamworking</p>
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
-                                    <p class="up">
+                                    <p class="up text-truncate">
                                         <i class="fas fa-arrow-up"></i>
                                         20% improvement
                                     </p>
@@ -158,11 +160,11 @@
                                 </div>
                             </div>
 
-                            <div class="progress-custom">
+                            <div class="progress-custom slider-item">
                                 <p class="progress-custom-sub">Productivity</p>
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
-                                    <p class="up">
+                                    <p class="up text-truncate">
                                         <i class="fas fa-arrow-up"></i>
                                         20% improvement
                                     </p>
@@ -172,11 +174,11 @@
                                 </div>
                             </div>
 
-                            <div class="progress-custom">
+                            <div class="progress-custom slider-item">
                                 <p class="progress-custom-sub">Amount of given feedback</p>
                                 <div class="progress-custom-info">
                                     <h3>Ok</h3>
-                                    <p class="down">
+                                    <p class="down text-truncate">
                                         <i class="fas fa-arrow-down"></i>
                                         20% break down
                                     </p>
@@ -186,14 +188,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="slider-trigger slider-trigger-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+
+                        <div class="slider-trigger slider-trigger-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
                     </section>
 
-                    <section class="section section-development">
+                    <section class="section section-development slider">
                         <div class="section-header">
                             <p>Longterm development</p>
                         </div>
                         <div class="section-body">
-                            <div class="graph-card  text-truncate">
+                            <div class="graph-card  text-truncate slider-item">
                                 <div class="graph-card-header">
                                     <h3 class="text-truncate">Teamworking</h3>
                                 </div>
@@ -254,7 +263,7 @@
                                 </div>
                             </div>
 
-                            <div class="graph-card  text-truncate">
+                            <div class="graph-card  text-truncate slider-item">
                                 <div class="graph-card-header">
                                     <h3 class="text-truncate">Productivity</h3>
                                 </div>
@@ -315,7 +324,7 @@
                                 </div>
                             </div>
 
-                            <div class="graph-card  text-truncate">
+                            <div class="graph-card  text-truncate slider-item">
                                 <div class="graph-card-header">
                                     <h3 class="text-truncate">Amount of given feedback</h3>
                                 </div>
@@ -375,6 +384,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="slider-trigger slider-trigger-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+
+                        <div class="slider-trigger slider-trigger-right">
+                            <i class="fas fa-chevron-right"></i>
                         </div>
                     </section>
 
@@ -565,6 +582,45 @@
                     e.style.width = `${e.getAttribute('fill-progress')}%`;
                 })
             })
+
+            // initial width check
+            checkSliderWidth()
+            
+            // Initialize sliders
+            sliderInit('.section-averages')
+            sliderInit('.section-development')
+            
+
+            // Check for sliders and content width show/hide slider triggers
+            function checkSliderWidth(slider) {
+                $('.slider').each(function(i) {
+                    if($(this).width() <= $(this).find('.slider-item').outerWidth() * 3 - 10) {
+                        $(this).find('.slider-trigger-left').show()
+                        $(this).find('.slider-trigger-right').show()
+                    }else {
+                        $(this).find('.slider-trigger-left').hide()
+                        $(this).find('.slider-trigger-right').hide()
+                    }
+                })
+            }
+
+            // Slider logic
+            function sliderInit(slider) {
+                $(`${slider} .slider-trigger-left`).on('click', function() {
+                    $(`${slider} .section-body`).animate({
+                        scrollLeft: `-=${$(`${slider} .slider-item`).outerWidth()}`
+                    }, 300, 'swing');
+                });
+
+                $(`${slider} .slider-trigger-right`).on('click', function() {
+                    $(`${slider} .section-body`).animate({
+                        scrollLeft: `+=${$(`${slider} .slider-item`).outerWidth()}`
+                    }, 300, 'swing');
+                });
+            }
+
+            // resize event listener
+            window.addEventListener('resize', checkSliderWidth)
         </script>
 
 </body>
