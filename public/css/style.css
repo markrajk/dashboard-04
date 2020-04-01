@@ -1112,7 +1112,7 @@ a:focus {
   padding: 2.5rem 0;
   margin: 0 3.6rem;
   margin-left: 4.2rem;
-  height: calc(100vh - 10.02rem);
+  height: calc(100vh - 12rem);
   max-width: 79rem; }
   .give-feedback-people {
     margin-top: 2.2rem; }
@@ -1167,8 +1167,8 @@ a:focus {
     .give-feedback-people-body {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-      grid-gap: 3rem 3rem;
-      max-height: calc(100% - 39rem);
+      grid-gap: 2rem 3rem;
+      max-height: calc(100% - 26rem);
       overflow-y: scroll;
       scrollbar-width: none;
       /* Firefox */
