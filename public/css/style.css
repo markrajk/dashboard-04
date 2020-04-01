@@ -1291,8 +1291,6 @@ a:focus {
   width: 100%;
   max-width: 109.8rem;
   padding: 2.5rem 3.6rem;
-  padding-left: 0;
-  margin-left: 3.6rem;
   border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
   overflow-y: scroll;
