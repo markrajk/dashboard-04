@@ -582,8 +582,10 @@ a:focus {
       transition: transform 0.2s ease-in-out 0.1s; }
 
 .header {
-  padding: 3.4rem 3.2rem 0.5rem 4rem;
-  font-size: 1.6rem; }
+  margin: 3.4rem 3.2rem 0rem 4rem;
+  padding-bottom: .5rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #e1e1e1; }
   .header-top {
     display: flex;
     align-items: center; }
@@ -751,8 +753,7 @@ a:focus {
   max-width: 110rem;
   padding: 2.5rem 0;
   margin: 0 3.6rem;
-  margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1; }
+  margin-left: 4.2rem; }
   .teams-main-view-header {
     margin-bottom: 3.8rem; }
     .teams-main-view-header .btn-custom-primary {
@@ -859,7 +860,6 @@ a:focus {
   padding: 2.5rem 0;
   margin: 0 3.6rem;
   margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1;
   max-width: 88.2rem; }
   .teams-people-view-header {
     margin-bottom: 1rem; }
@@ -1041,7 +1041,6 @@ a:focus {
   padding: 2.5rem 0;
   margin: 0 3.6rem;
   margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1;
   max-width: 72rem; }
   .teams-settings-general-header {
     margin-bottom: 3.9rem; }
@@ -1278,7 +1277,6 @@ a:focus {
 .single-user {
   max-width: 101.6rem;
   padding: 2.5rem 3.6rem;
-  border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
   overflow-y: scroll;
   scrollbar-width: none;

@@ -1066,9 +1066,10 @@ a:focus {
 // HEADER START
 // ==================================
 .header {
-  padding: 3.4rem 3.2rem 0.5rem 4rem;
+  margin: 3.4rem 3.2rem 0rem 4rem;
+  padding-bottom: .5rem;
   font-size: 1.6rem;
-  //border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 
   &-top {
     display: flex;
@@ -1317,7 +1318,7 @@ a:focus {
   padding:2.5rem 0;
   margin:0 3.6rem;
   margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1;
+  //border-top: 1px solid #e1e1e1;
 
   &-header {
     margin-bottom: 3.8rem;
@@ -1495,7 +1496,7 @@ a:focus {
   padding:2.5rem 0;
   margin:0 3.6rem;
   margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1;
+  //border-top: 1px solid #e1e1e1;
   max-width: 88.2rem;
 
   &-header {
@@ -1789,7 +1790,7 @@ a:focus {
   padding:2.5rem 0;
   margin:0 3.6rem;
   margin-left: 4.2rem;
-  border-top: 1px solid #e1e1e1;
+  //border-top: 1px solid #e1e1e1;
   max-width: 72rem;
 
   &-header {
@@ -2145,7 +2146,7 @@ a:focus {
 .single-user {
   max-width: 101.6rem;
   padding:2.5rem 3.6rem;
-  border-top: 1px solid #e1e1e1;
+  //border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
 
   overflow-y: scroll;
