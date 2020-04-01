@@ -12,7 +12,7 @@ sidenavMenuToggle.addEventListener('click', function() {
 })
 
 function closeMenuOnSmall() {
-    if(window.innerWidth < 991) {
+    if(window.innerWidth < 1320) {
         sidenavMenu.classList.add('sidebar-menu-close-anim');
         sidenavMenuToggleIcon.classList.add('sidebar-menu-close-icon-rotate');
     }else {
