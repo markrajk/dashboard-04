@@ -141,12 +141,12 @@
                 </p>
                 <div class="single-user-body">
 
-                    <section class="section section-averages slider">
+                    <section class="section section-averages">
                         <div class="section-header">
                             <p>Two week averages</p>
                         </div>
                         <div class="section-body">
-                            <div class="progress-custom slider-item">
+                            <div class="progress-custom">
                                 <p class="progress-custom-sub">Teamworking</p>
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
@@ -160,7 +160,7 @@
                                 </div>
                             </div>
 
-                            <div class="progress-custom slider-item">
+                            <div class="progress-custom">
                                 <p class="progress-custom-sub">Productivity</p>
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
@@ -174,7 +174,7 @@
                                 </div>
                             </div>
 
-                            <div class="progress-custom slider-item">
+                            <div class="progress-custom">
                                 <p class="progress-custom-sub">Amount of given feedback</p>
                                 <div class="progress-custom-info">
                                     <h3>Ok</h3>
@@ -188,13 +188,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-trigger slider-trigger-left">
+                        <!-- <div class="slider-trigger slider-trigger-left">
                             <i class="fas fa-chevron-left"></i>
                         </div>
 
                         <div class="slider-trigger slider-trigger-right">
                             <i class="fas fa-chevron-right"></i>
-                        </div>
+                        </div> -->
                     </section>
 
                     <section class="section section-development slider">
@@ -576,6 +576,25 @@
         <script src="../public/js/main.js"></script>
 
         <script>
+            // CHART & NUMBER OF BARS
+            function numberOfChartBars() {
+                let graphs = document.querySelectorAll('.graph-card');
+                [...graphs].forEach(e => {
+                    let rem = parseInt(getComputedStyle(document.documentElement).fontSize);
+                    let graphWidth = e.offsetWidth;
+                    let barWidth = rem * 1.8 * 3;
+                    let numOfBars = Math.floor(graphWidth / (barWidth));
+                    
+                    e.querySelectorAll('.graph-card-body .bar').forEach((e,i,arr) => {
+                        e.style.display = 'none';
+                        if(i + 1 >= arr.length - numOfBars) {
+                            e.style.display = 'inline-block';
+                        }
+                    })
+            })
+
+            }
+
             // ANIMATE PROGRESS BAR
             window.addEventListener('load', function() {
                 document.querySelectorAll('.progress-custom-bar-fill').forEach(e => {
@@ -597,11 +616,15 @@
                     if($(this).width() <= $(this).find('.slider-item').outerWidth() * 3 - 10) {
                         $(this).find('.slider-trigger-left').show()
                         $(this).find('.slider-trigger-right').show()
+                        //$(`.slider .slider-item`)
                     }else {
                         $(this).find('.slider-trigger-left').hide()
                         $(this).find('.slider-trigger-right').hide()
+                        //$(`.slider .slider-item`)
                     }
                 })
+
+                numberOfChartBars()
             }
 
             // Slider logic

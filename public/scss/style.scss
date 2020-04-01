@@ -2261,17 +2261,26 @@ a:focus {
     & .section-averages {
       margin-bottom: 4.3rem;
 
+      & .section-header {
+        margin-bottom: 0;
+      }
+
 
       & .section-body {
         display: grid;
-        grid-template-columns: repeat(3, minmax(22rem, 1fr));
+        grid-template-columns: repeat(3, 1fr);
 
-        @include respond(desktop-xxsm) {
-          grid-template-columns: repeat(3, 100%);
+        @include respond(desktop-md) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond(desktop-xsm) {
+          grid-template-columns: repeat(1, 100%);
         }
 
         & .progress-custom {
          padding: 0 2rem;
+         padding-top: 2.2rem;
 
           &-sub {
             font-size: 1.2rem;
@@ -2368,7 +2377,11 @@ a:focus {
         grid-gap: 0 0;
         margin-bottom: 2rem;
 
-        @include respond(desktop-xxsm) {
+        @include respond(desktop-lg) {
+          grid-template-columns: repeat(3, 50%);
+        }
+
+        @include respond(desktop-xsm) {
           grid-template-columns: repeat(3, 100%);
         }
        
@@ -2377,6 +2390,10 @@ a:focus {
       & .graph-card {
         padding: 0 4rem;
         height: 24rem;
+
+        @include respond(desktop-lg) {
+          padding: 0 3rem;
+        }
 
         &-header {
           height: auto;
@@ -2398,6 +2415,10 @@ a:focus {
           padding-right: 1rem;
           height: calc(100% - 1.6rem);
 
+          & .bar {
+            display: none;
+          }
+
           & .bar,
           & .bar-fill {
             border-radius: .6rem;
@@ -2413,7 +2434,7 @@ a:focus {
           border-left: 1px solid #E1E1E1;
           border-right: 1px solid #E1E1E1;
 
-          @include respond(desktop-xxsm) {
+          @include respond(desktop-lg) {
             border: 0;
           }
         }
@@ -2495,13 +2516,13 @@ a:focus {
     &-body { 
 
       .bar {
-          &:first-of-type,
-          &:first-of-type + .bar,
-          &:first-of-type + .bar + .bar,
-          &:first-of-type + .bar + .bar + .bar,
-          &:first-of-type + .bar + .bar + .bar + .bar {
-            display: none;
-          }
+          // &:first-of-type,
+          // &:first-of-type + .bar,
+          // &:first-of-type + .bar + .bar,
+          // &:first-of-type + .bar + .bar + .bar,
+          // &:first-of-type + .bar + .bar + .bar + .bar {
+          //   display: none;
+          // }
 
           // @include respond(desktop-xl) {
           //   &:first-of-type + .bar + .bar + .bar + .bar + .bar {
@@ -2522,12 +2543,12 @@ a:focus {
           //   }
           // }
 
-          @include respond(desktop-lg) {
-            &:first-of-type + .bar + .bar + .bar + .bar + .bar,
-            &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
-              display: inline-block;
-            }
-          }
+          // @include respond(desktop-lg) {
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar,
+          //   &:first-of-type + .bar + .bar + .bar + .bar + .bar + .bar {
+          //     display: inline-block;
+          //   }
+          // }
 
           // @include respond(desktop-xsm) {
           //   &:first-of-type + .bar,
