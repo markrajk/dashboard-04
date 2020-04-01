@@ -2390,6 +2390,8 @@ a:focus {
     }
 
     .section-development {
+      margin: 0 -2rem;
+      padding: 0 2rem;
       margin-bottom: 3rem;
 
       & .section-header {
@@ -2423,7 +2425,7 @@ a:focus {
         }
 
         &-header {
-          margin-left: -1.5rem;
+          margin-left: -1.7rem;
           height: auto;
           padding: 0;
 
@@ -2473,6 +2475,17 @@ a:focus {
           @include respond(desktop-lg) {
             border: 0;
           }
+        }
+      }
+
+      & .slider-trigger {
+        
+        &-left {
+          left: 2rem;
+        }
+
+        &-right {
+          right: 2rem;
         }
       }
     }

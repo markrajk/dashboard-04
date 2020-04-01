@@ -1438,6 +1438,8 @@ a:focus {
             .single-user-body .section-averages .section-body .progress-custom-bar-fill.ok {
               background: linear-gradient(to right, #ffd00a -26%, #ffc812 58%); }
   .single-user-body .section-development {
+    margin: 0 -2rem;
+    padding: 0 2rem;
     margin-bottom: 3rem; }
     .single-user-body .section-development .section-header {
       margin-bottom: 2rem; }
@@ -1461,7 +1463,7 @@ a:focus {
         .single-user-body .section-development .graph-card {
           padding: 0 3rem; } }
       .single-user-body .section-development .graph-card-header {
-        margin-left: -1.5rem;
+        margin-left: -1.7rem;
         height: auto;
         padding: 0; }
         .single-user-body .section-development .graph-card-header h4 {
@@ -1495,6 +1497,10 @@ a:focus {
         @media (max-width: 1199px) {
           .single-user-body .section-development .graph-card:nth-of-type(2) {
             border: 0; } }
+    .single-user-body .section-development .slider-trigger-left {
+      left: 2rem; }
+    .single-user-body .section-development .slider-trigger-right {
+      right: 2rem; }
   .single-user-body .section-comments .section-header {
     margin-bottom: 0; }
   .single-user-body .section-comments .section-body {
