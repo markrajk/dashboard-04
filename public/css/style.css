@@ -216,6 +216,7 @@ a:focus {
   height: 100%; }
 
 .page-content {
+  padding: 3.4rem 3.2rem 0 4.1rem;
   width: calc(100% - 9rem);
   height: 100%; }
 
@@ -429,6 +430,9 @@ a:focus {
           background-color: #f7f9fa;
           color: inherit; }
 
+.modal {
+  background-color: rgba(25, 39, 54, 0.32); }
+
 .sidebar {
   position: relative;
   display: inline-flex;
@@ -582,7 +586,6 @@ a:focus {
       transition: transform 0.2s ease-in-out 0.1s; }
 
 .header {
-  margin: 3.4rem 3.2rem 0rem 4rem;
   padding-bottom: .5rem;
   font-size: 1.6rem; }
   .header-top {
@@ -676,8 +679,7 @@ a:focus {
   .header-bottom {
     display: flex;
     align-items: center;
-    padding: 4.8rem 0 .5rem;
-    margin-right: -1.6rem; }
+    padding: 4.8rem 0 .5rem; }
     .header-bottom .choose {
       display: flex;
       align-items: center;
@@ -751,8 +753,6 @@ a:focus {
 .teams-main-view {
   max-width: 110rem;
   padding: 2.5rem 0;
-  margin: 0 3.6rem;
-  margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1; }
   .teams-main-view-header {
     margin-bottom: 3.8rem; }
@@ -858,8 +858,6 @@ a:focus {
 
 .teams-people-view {
   padding: 2.5rem 0;
-  margin: 0 3.6rem;
-  margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
   max-width: 88.2rem; }
   .teams-people-view-header {
@@ -1040,8 +1038,6 @@ a:focus {
 
 .teams-settings-general {
   padding: 2.5rem 0;
-  margin: 0 3.6rem;
-  margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
   max-width: 72rem; }
   .teams-settings-general-header {
@@ -1110,8 +1106,6 @@ a:focus {
 
 .give-feedback {
   padding: 2.5rem 0;
-  margin: 0 3.6rem;
-  margin-left: 4.2rem;
   height: calc(100vh - 12rem);
   max-width: 79rem; }
   .give-feedback-people {
@@ -1290,7 +1284,7 @@ a:focus {
 .single-user {
   width: 100%;
   max-width: 109.8rem;
-  padding: 2.5rem 3.6rem;
+  padding: 2.5rem 0;
   border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
   overflow-y: scroll;
@@ -1388,7 +1382,7 @@ a:focus {
           grid-template-columns: repeat(1, 100%); } }
       .single-user-body .section-averages .section-body .progress-custom {
         padding-right: 1rem;
-        padding-left: 2rem;
+        padding-left: 1.2rem;
         margin-right: 2.5rem;
         padding-top: 2.2rem; }
         .single-user-body .section-averages .section-body .progress-custom-sub {
@@ -1461,6 +1455,7 @@ a:focus {
           grid-template-columns: repeat(3, 100%); } }
     .single-user-body .section-development .graph-card {
       padding: 1rem 4rem;
+      padding-left: 2.9rem;
       height: 26rem; }
       @media (max-width: 1199px) {
         .single-user-body .section-development .graph-card {

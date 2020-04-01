@@ -359,6 +359,7 @@ a:focus {
 
 .page-content {
   //min-width: 85rem;
+  padding: 3.4rem 3.2rem 0 4.1rem;
   width: calc(100% - 9rem);
   height: 100%;
 }
@@ -786,6 +787,10 @@ a:focus {
   }
 }
 
+.modal {
+  background-color: rgba($color: #192736, $alpha: .32);
+}
+
 // [type="radio"]:checked,
 // [type="radio"]:not(:checked) {
 //     position: absolute;
@@ -1066,7 +1071,7 @@ a:focus {
 // HEADER START
 // ==================================
 .header {
-  margin: 3.4rem 3.2rem 0rem 4rem;
+  //margin: 3.4rem 3.2rem 0rem 4rem;
   padding-bottom: .5rem;
   font-size: 1.6rem;
   //border-bottom: 1px solid #e1e1e1;
@@ -1197,7 +1202,7 @@ a:focus {
     display: flex;
     align-items: center;
     padding: 4.8rem 0 .5rem;
-    margin-right: -1.6rem;
+    //margin-right: -1.6rem;
 
     & .choose {
       display: flex;
@@ -1316,8 +1321,8 @@ a:focus {
 .teams-main-view {
   max-width: 110rem;
   padding:2.5rem 0;
-  margin:0 3.6rem;
-  margin-left: 4.2rem;
+  //margin:0 3.6rem;
+  //margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
 
   &-header {
@@ -1494,8 +1499,8 @@ a:focus {
 // ==================================
 .teams-people-view {
   padding:2.5rem 0;
-  margin:0 3.6rem;
-  margin-left: 4.2rem;
+  //margin:0 3.6rem;
+  //margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
   max-width: 88.2rem;
 
@@ -1788,8 +1793,8 @@ a:focus {
 // ==================================
 .teams-settings-general {
   padding:2.5rem 0;
-  margin:0 3.6rem;
-  margin-left: 4.2rem;
+  //margin:0 3.6rem;
+  //margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
   max-width: 72rem;
 
@@ -1906,8 +1911,8 @@ a:focus {
 // ==================================
 .give-feedback {
   padding:2.5rem 0;
-  margin:0 3.6rem;
-  margin-left: 4.2rem;
+  //margin:0 3.6rem;
+  //margin-left: 4.2rem;
   height: calc(100vh - 12rem);
   max-width: 79rem;
 
@@ -2017,6 +2022,7 @@ a:focus {
   }
 
   & .modal {
+    
     
     &-content {
       margin: auto;
@@ -2161,9 +2167,7 @@ a:focus {
 .single-user {
   width: 100%;
   max-width: 109.8rem;
-  padding:2.5rem 3.6rem;
-  //padding-left: 0;
-  //margin-left: 3.6rem;
+  padding:2.5rem 0;
   border-top: 1px solid #e1e1e1;
   max-height: calc(100vh - 20rem);
 
@@ -2299,7 +2303,7 @@ a:focus {
 
         & .progress-custom {
           padding-right: 1rem;
-          padding-left: 2rem;
+          padding-left: 1.2rem;
           margin-right: 2.5rem;
          padding-top: 2.2rem;
 
@@ -2411,6 +2415,7 @@ a:focus {
       
       & .graph-card {
         padding: 1rem 4rem;
+        padding-left: 2.9rem;
         height: 26rem;
 
         @include respond(desktop-lg) {
