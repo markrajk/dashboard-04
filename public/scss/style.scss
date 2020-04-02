@@ -2190,7 +2190,6 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: .1rem;
 
     &-info {
       margin-right: .5rem;
@@ -2245,6 +2244,7 @@ a:focus {
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
         background-color: #f5f7f8;
+        border-radius: .1rem;
 
         & p {
           font-size: 1.25rem;
@@ -2569,11 +2569,9 @@ a:focus {
             width: 100%;
 
             &-header {
-              //margin-bottom: .4rem;
               font-size: 1.4rem;
               display: flex;
               align-items: center;
-              //justify-content: space-between;
 
               & .name {
                 margin-right: 1.5rem;

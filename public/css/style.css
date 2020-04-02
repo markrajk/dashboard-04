@@ -1302,8 +1302,7 @@ a:focus {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-radius: .1rem; }
+    align-items: center; }
     .single-user-header-info {
       margin-right: .5rem;
       display: inline-flex;
@@ -1341,7 +1340,8 @@ a:focus {
     .single-user-body .section-header {
       margin-bottom: 2.2rem;
       padding: 1rem 1.25rem;
-      background-color: #f5f7f8; }
+      background-color: #f5f7f8;
+      border-radius: .1rem; }
       .single-user-body .section-header p {
         font-size: 1.25rem;
         font-weight: 500;
