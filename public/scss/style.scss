@@ -2166,9 +2166,9 @@ a:focus {
 // SINGLE USER START
 // ==================================
 .single-user {
-  border-left: 1px solid magenta;
+  // border-left: 1px solid magenta;
   width: 100%;
-  max-width: 109.8rem;
+  max-width: 103rem;
   padding:2.5rem 0;
   border-top: 1px solid #e1e1e1;
   z-index: 100;
@@ -2205,7 +2205,7 @@ a:focus {
       }
 
       & .name {
-        margin-bottom: .2rem;
+        margin-bottom: .6rem;
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
@@ -2222,6 +2222,7 @@ a:focus {
     }
 
     & .export-pdf {
+      margin-right: .5rem;
       margin-bottom: .5rem;
       align-self: flex-end;
       display: inline-block;
@@ -2311,10 +2312,10 @@ a:focus {
         }
 
         & .progress-custom {
-          border: 1px solid magenta;
+          // border: 1px solid magenta;
           padding-right: 3.1rem;
           padding-left: 1.35rem;
-          padding-top: 2.2rem;
+          padding-top: 2.6rem;
 
           &-sub {
             font-size: 1.2rem;
@@ -2423,7 +2424,7 @@ a:focus {
       }
       
       & .graph-card {
-        border: 1px solid magenta;
+        // border: 1px solid magenta;
         //padding: 1rem 4rem;
         //padding-left: 2.9rem;
         padding: .9rem 1.35rem;
@@ -2439,6 +2440,7 @@ a:focus {
           padding: 0;
 
           & h4 {
+            margin-bottom: .3rem;
             font-size: 1rem;
             font-weight: 700;
             line-height: 1.3;
@@ -2477,13 +2479,22 @@ a:focus {
           }
         }
 
-        &:nth-of-type(2) {
-          // border-left: 1px solid #E1E1E1;
+        &:nth-of-type(1) {
+          border-right: 1px solid #E1E1E1;
           // border-right: 1px solid #E1E1E1;
 
-          // @include respond(desktop-lg) {
-          //   border: 0;
-          // }
+          @include respond(desktop-lg) {
+            border: 0;
+          }
+        }
+
+        &:nth-of-type(2) {
+          border-right: 1px solid #E1E1E1;
+          // border-right: 1px solid #E1E1E1;
+
+          @include respond(desktop-lg) {
+            border: 0;
+          }
         }
       }
 
@@ -2507,11 +2518,12 @@ a:focus {
 
       & .section-body {
         padding: 1rem 0;
+        padding-top: 3.3rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
         //grid-gap: 3rem 14rem;
         max-height: 29.2rem;
-        grid-gap: 2.6rem 1.7rem;
+        grid-gap: 2.5rem 1.7rem;
 
         overflow-y: scroll;
         scrollbar-width: none; /* Firefox */
@@ -2526,12 +2538,12 @@ a:focus {
         & .comment-container  {
           padding-left: 1.35rem;
           padding-right: 3rem;
-          border: 1px solid magenta;
+          // border: 1px solid magenta;
           //margin: 1.25rem 2.2rem;
           display: inline-flex;
           align-items: center;
           & img {
-            margin-right: 1.27rem;
+            margin-right: 1.5rem;
             width: 4.55rem;
             height: 4.55rem;
             border-radius: 50%;
@@ -2541,7 +2553,7 @@ a:focus {
             width: 100%;
 
             &-header {
-              margin-bottom: .4rem;
+              //margin-bottom: .4rem;
               font-size: 1.4rem;
               display: flex;
               align-items: center;
