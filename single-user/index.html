@@ -632,15 +632,16 @@
 
             // Slider logic
             function sliderInit(slider) {
+                console.log($('html').css('font-size'))
                 $(`${slider} .slider-trigger-left`).on('click', function() {
                     $(`${slider} .section-body`).animate({
-                        scrollLeft: `-=${$(`${slider} .slider-item`).outerWidth()}`
+                        scrollLeft: `-=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
                     }, 300, 'swing');
                 });
 
                 $(`${slider} .slider-trigger-right`).on('click', function() {
                     $(`${slider} .section-body`).animate({
-                        scrollLeft: `+=${$(`${slider} .slider-item`).outerWidth()}`
+                        scrollLeft: `+=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
                     }, 300, 'swing');
                 });
             }
