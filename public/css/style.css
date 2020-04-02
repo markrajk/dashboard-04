@@ -1506,7 +1506,7 @@ a:focus {
           width: 1.8rem; }
           .single-user-body .section-development .graph-card-body .bar-info, .single-user-body .section-development .graph-card-body .bar-fill-info {
             font-family: "HankRnd-Bold";
-            font-size: .9rem;
+            font-size: 1rem;
             bottom: -1rem; }
       .single-user-body .section-development .graph-card:nth-of-type(1) {
         border-right: 1px solid #E1E1E1; }
