@@ -113,11 +113,11 @@ a:focus {
   .btn-custom-table:hover, .btn-custom-table:focus {
     color: #fff; }
   .btn-custom-table.green {
-    background: linear-gradient(#3cf166, #17de24); }
+    background: #30ea4f; }
   .btn-custom-table.red {
-    background: linear-gradient(#fa2020, #ef0049); }
+    background: #fd1f27; }
   .btn-custom-table.yellow {
-    background: linear-gradient(#f5e144, #ffa30f); }
+    background: #ffcc19; }
 
 .sidebar-menu-close-anim {
   margin-left: -25.4rem; }
@@ -254,11 +254,11 @@ a:focus {
         width: 100%;
         border-radius: 5px; }
         .graph-card-body .bar-fill-green {
-          background: linear-gradient(#3cf166, #17de24); }
+          background: #30ea4f; }
         .graph-card-body .bar-fill-orange {
-          background: linear-gradient(#f5e144, #ffa30f); }
+          background: #ffcc19; }
         .graph-card-body .bar-fill-red {
-          background: linear-gradient(#fa2020, #ef0049); }
+          background: #fd1f27; }
       .graph-card-body .bar-info {
         font-family: "HankRnd-Bold";
         position: absolute;
@@ -671,15 +671,15 @@ a:focus {
       width: 3.2rem;
       height: 3.2rem; }
   .header-small {
-    margin-top: 0.8rem;
-    font-size: 1.4rem;
+    margin-top: 0.7rem;
+    font-size: 1.45rem;
     line-height: 1.38;
     font-weight: 400;
     color: #9699a6; }
   .header-bottom {
     display: flex;
     align-items: center;
-    padding: 4.8rem 0 .5rem; }
+    padding: 4.5rem 0 .6rem; }
     .header-bottom .choose {
       display: flex;
       align-items: center;
@@ -1299,34 +1299,38 @@ a:focus {
     width: 0;
     height: 0; }
   .single-user-header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    border-radius: .1rem; }
     .single-user-header-info {
       margin-right: .5rem;
       display: inline-flex;
       align-items: center; }
       .single-user-header-info img {
         margin-left: 1.35rem;
-        margin-right: 1rem;
+        margin-right: 1.1rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%; }
       .single-user-header-info .name {
-        margin-bottom: .6rem;
+        margin-bottom: .2rem;
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
         color: #252525; }
         .single-user-header-info .name .email {
+          margin-top: .4rem;
+          font-weight: 400;
           display: block;
           font-size: 1.4rem;
           line-height: 1.36;
           color: #383838; }
     .single-user-header .export-pdf {
       margin-right: .5rem;
-      margin-bottom: .5rem;
+      margin-bottom: .2rem;
+      font-weight: 500;
       align-self: flex-end;
       display: inline-block;
       font-size: 1.4rem;
@@ -1373,13 +1377,13 @@ a:focus {
       .single-user-body .section .slider-trigger-right {
         right: -1rem; }
   .single-user-body .section-averages {
-    margin-bottom: 4.3rem; }
+    margin-bottom: 4.4rem; }
     .single-user-body .section-averages .section-header {
       margin-bottom: 0; }
     .single-user-body .section-averages .section-body {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0 1.7rem; }
+      grid-gap: 0 1.8rem; }
       @media (max-width: 991px) {
         .single-user-body .section-averages .section-body {
           grid-template-columns: repeat(2, 1fr); } }
@@ -1387,31 +1391,35 @@ a:focus {
         .single-user-body .section-averages .section-body {
           grid-template-columns: repeat(1, 100%); } }
       .single-user-body .section-averages .section-body .progress-custom {
-        padding-right: 3.1rem;
+        padding-right: 2.94rem;
         padding-left: 1.35rem;
-        padding-top: 2.6rem; }
+        padding-top: 2.8rem; }
         .single-user-body .section-averages .section-body .progress-custom-sub {
+          margin-bottom: -.2rem;
           font-size: 1.2rem;
           font-weight: 500;
           line-height: 1.33;
           letter-spacing: normal;
           color: #818181; }
         .single-user-body .section-averages .section-body .progress-custom-info {
-          margin-bottom: 1.2rem;
           display: flex;
           justify-content: space-between;
           align-items: center; }
           .single-user-body .section-averages .section-body .progress-custom-info h3 {
+            margin-top: .2rem;
             margin-right: 1rem;
             font-size: 3rem;
             font-weight: 700;
             line-height: 1.3;
             color: #1f1f1f; }
           .single-user-body .section-averages .section-body .progress-custom-info .up, .single-user-body .section-averages .section-body .progress-custom-info .down {
-            font-size: 1.2rem;
+            margin-right: -.15rem;
+            margin-bottom: -1rem;
+            font-size: 1.25rem;
             font-weight: 500;
             line-height: 1.33; }
             .single-user-body .section-averages .section-body .progress-custom-info .up i, .single-user-body .section-averages .section-body .progress-custom-info .down i {
+              margin-right: .1rem;
               font-size: .8rem;
               display: inline-flex;
               align-items: center;
@@ -1429,6 +1437,7 @@ a:focus {
             .single-user-body .section-averages .section-body .progress-custom-info .down i {
               background-color: #ff5555; }
         .single-user-body .section-averages .section-body .progress-custom-bar {
+          margin-top: 1.2rem;
           width: 100%;
           height: 1.46rem;
           border-radius: .6rem;
@@ -1436,14 +1445,17 @@ a:focus {
           .single-user-body .section-averages .section-body .progress-custom-bar-fill {
             width: 0%;
             height: 100%;
-            border-radius: .6rem;
+            border-top-left-radius: .6rem;
+            border-bottom-left-radius: .6rem;
             transition: width .8s ease-out .1s; }
             .single-user-body .section-averages .section-body .progress-custom-bar-fill.good {
-              background: linear-gradient(to right, #50e22d -26%, #99e46d 58%); }
+              background-color: #30ea4f; }
             .single-user-body .section-averages .section-body .progress-custom-bar-fill.ok {
-              background: linear-gradient(to right, #ffd00a -26%, #ffc812 58%); }
+              background-color: #ffcc19; }
+            .single-user-body .section-averages .section-body .progress-custom-bar-fill.bad {
+              background-color: #fd1f27; }
   .single-user-body .section-development {
-    margin-bottom: 3rem; }
+    margin-bottom: 3.3rem; }
     .single-user-body .section-development .section-header {
       margin-bottom: 2rem; }
     .single-user-body .section-development .section-body {
@@ -1459,7 +1471,8 @@ a:focus {
         .single-user-body .section-development .section-body {
           grid-template-columns: repeat(3, 100%); } }
     .single-user-body .section-development .graph-card {
-      padding: .9rem 1.35rem;
+      padding: 1.1rem 1.35rem;
+      padding-top: .9rem;
       height: 26rem; }
       @media (max-width: 1199px) {
         .single-user-body .section-development .graph-card {
@@ -1484,15 +1497,17 @@ a:focus {
       .single-user-body .section-development .graph-card-body {
         padding-top: 2rem;
         padding-left: 2.59rem;
-        padding-right: 3.32rem;
-        height: calc(100% - 2.6rem); }
+        padding-right: 2.8rem;
+        height: calc(100% - 2.8rem); }
         .single-user-body .section-development .graph-card-body .bar {
           display: none; }
         .single-user-body .section-development .graph-card-body .bar, .single-user-body .section-development .graph-card-body .bar-fill {
           border-radius: .6rem;
           width: 1.8rem; }
           .single-user-body .section-development .graph-card-body .bar-info, .single-user-body .section-development .graph-card-body .bar-fill-info {
-            bottom: -.8rem; }
+            font-family: "HankRnd-Bold";
+            font-size: .9rem;
+            bottom: -1rem; }
       .single-user-body .section-development .graph-card:nth-of-type(1) {
         border-right: 1px solid #E1E1E1; }
         @media (max-width: 1199px) {

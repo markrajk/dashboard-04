@@ -1,9 +1,9 @@
 // ==================================
 // VARIABLES
 // ==================================
-$green-gradient: linear-gradient(#3cf166, #17de24);
-$yellow-gradient: linear-gradient(#f5e144, #ffa30f);
-$red-gradient: linear-gradient(#fa2020, #ef0049);
+$green-gradient: #30ea4f;
+$yellow-gradient: #ffcc19;
+$red-gradient: #fd1f27;
 
 // ==================================
 // MIXINS & FUNCTIONS
@@ -1192,8 +1192,8 @@ a:focus {
   }
 
   &-small {
-    margin-top: 0.8rem;
-    font-size: 1.4rem;
+    margin-top: 0.7rem;
+    font-size: 1.45rem;
     line-height: 1.38;
     font-weight: 400;
     color: #9699a6;
@@ -1202,7 +1202,7 @@ a:focus {
   &-bottom {
     display: flex;
     align-items: center;
-    padding: 4.8rem 0 .5rem;
+    padding: 4.5rem 0 .6rem;
     //margin-right: -1.6rem;
 
     & .choose {
@@ -2186,10 +2186,11 @@ a:focus {
     }
 
   &-header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: .1rem;
 
     &-info {
       margin-right: .5rem;
@@ -2198,21 +2199,22 @@ a:focus {
 
       & img {
         margin-left: 1.35rem;
-        margin-right: 1rem;
+        margin-right: 1.1rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
       }
 
       & .name {
-        margin-bottom: .6rem;
+        margin-bottom: .2rem;
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
         color: #252525;
 
         & .email {
-
+          margin-top: .4rem;
+          font-weight: 400;
           display: block;
           font-size: 1.4rem;
           line-height: 1.36;
@@ -2223,7 +2225,8 @@ a:focus {
 
     & .export-pdf {
       margin-right: .5rem;
-      margin-bottom: .5rem;
+      margin-bottom: .2rem;
+      font-weight: 500;
       align-self: flex-end;
       display: inline-block;
       //margin-bottom: 1rem;
@@ -2291,7 +2294,7 @@ a:focus {
     }
 
     & .section-averages {
-      margin-bottom: 4.3rem;
+      margin-bottom: 4.4rem;
 
       & .section-header {
         margin-bottom: 0;
@@ -2301,7 +2304,7 @@ a:focus {
       & .section-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 1.7rem;
+        grid-gap: 0 1.8rem;
 
         @include respond(desktop-md) {
           grid-template-columns: repeat(2, 1fr);
@@ -2313,11 +2316,12 @@ a:focus {
 
         & .progress-custom {
           // border: 1px solid magenta;
-          padding-right: 3.1rem;
+          padding-right: 2.94rem;
           padding-left: 1.35rem;
-          padding-top: 2.6rem;
+          padding-top: 2.8rem;
 
           &-sub {
+            margin-bottom: -.2rem;
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.33;
@@ -2326,12 +2330,13 @@ a:focus {
           }
 
           &-info {
-            margin-bottom: 1.2rem;
+            //margin-bottom: .7rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             & h3 {
+              margin-top: .2rem;
               margin-right: 1rem;
               font-size: 3rem;
               font-weight: 700;
@@ -2341,11 +2346,16 @@ a:focus {
 
             & .up,
             & .down {
-              font-size: 1.2rem;
+              //margin-left: .5rem;
+              margin-right: -.15rem;
+              margin-bottom: -1rem;
+              font-size: 1.25rem;
               font-weight: 500;
               line-height: 1.33;
 
               & i {
+                //margin-bottom: -.1rem;
+                margin-right: .1rem;
                 font-size: .8rem;
                 display: inline-flex;
                 align-items: center;
@@ -2375,6 +2385,7 @@ a:focus {
           }
 
           &-bar {
+            margin-top: 1.2rem;
             width: 100%;
             height: 1.46rem;
             border-radius: .6rem;
@@ -2383,15 +2394,20 @@ a:focus {
             &-fill {
               width: 0%;
               height: 100%;
-              border-radius: .6rem;
+              border-top-left-radius: .6rem;
+              border-bottom-left-radius: .6rem;
               transition: width .8s ease-out .1s;
 
               &.good {
-                background: linear-gradient(to right, #50e22d -26%, #99e46d 58%);
+                background-color: $green-gradient;
               }
 
               &.ok {
-                background: linear-gradient(to right, #ffd00a -26%, #ffc812 58%);
+                background-color: $yellow-gradient;
+              }
+
+              &.bad {
+                background-color: $red-gradient;
               }
             }
           }
@@ -2400,7 +2416,7 @@ a:focus {
     }
 
     .section-development {
-      margin-bottom: 3rem;
+      margin-bottom: 3.3rem;
 
       & .section-header {
         margin-bottom: 2rem;
@@ -2427,7 +2443,8 @@ a:focus {
         // border: 1px solid magenta;
         //padding: 1rem 4rem;
         //padding-left: 2.9rem;
-        padding: .9rem 1.35rem;
+        padding: 1.1rem 1.35rem;
+        padding-top: .9rem;
         height: 26rem;
 
         @include respond(desktop-lg) {
@@ -2461,8 +2478,8 @@ a:focus {
         &-body {
           padding-top: 2rem;
           padding-left: 2.59rem;
-          padding-right: 3.32rem;
-          height: calc(100% - 2.6rem);
+          padding-right: 2.8rem;
+          height: calc(100% - 2.8rem);
 
           & .bar {
             display: none;
@@ -2474,7 +2491,9 @@ a:focus {
             width: 1.8rem;
 
             &-info {
-              bottom: -.8rem;
+              font-family: "HankRnd-Bold";
+              font-size: .9rem;
+              bottom: -1rem;
             }
           }
         }
