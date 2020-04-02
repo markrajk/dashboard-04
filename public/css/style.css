@@ -1308,8 +1308,8 @@ a:focus {
       display: inline-flex;
       align-items: center; }
       .single-user-header-info img {
-        margin-left: 1.35rem;
-        margin-right: 1.1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.2rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%; }
@@ -1338,8 +1338,12 @@ a:focus {
   .single-user-body .section {
     position: relative; }
     .single-user-body .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 2.2rem;
       padding: 1rem 1.25rem;
+      padding-right: 3rem;
       background-color: #f5f7f8;
       border-radius: .1rem; }
       .single-user-body .section-header p {
@@ -1347,6 +1351,17 @@ a:focus {
         font-weight: 500;
         line-height: 1.28;
         color: #647282; }
+      .single-user-body .section-header .dropdown-custom-trigger {
+        border: none;
+        box-shadow: none;
+        font-size: 1.25rem;
+        line-height: 1.28;
+        color: #657383;
+        padding: 0; }
+        .single-user-body .section-header .dropdown-custom-trigger:focus, .single-user-body .section-header .dropdown-custom-trigger:active {
+          color: #657383;
+          border: none;
+          box-shadow: none; }
     .single-user-body .section-body {
       overflow-y: auto;
       scrollbar-width: none;
@@ -1558,7 +1573,7 @@ a:focus {
           align-items: center; }
           .single-user-body .section-comments .section-body .comment-container .comment-header .name {
             margin-right: 1rem;
-            font-weight: 700;
+            font-weight: 500;
             line-height: 1.36;
             color: #0d0e0d; }
           .single-user-body .section-comments .section-body .comment-container .comment-header .when {

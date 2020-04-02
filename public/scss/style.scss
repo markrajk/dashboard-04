@@ -2197,8 +2197,8 @@ a:focus {
       align-items: center;
 
       & img {
-        margin-left: 1.35rem;
-        margin-right: 1.1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.2rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
@@ -2241,8 +2241,12 @@ a:focus {
       position: relative;
 
       &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin-bottom: 2.2rem;
         padding: 1rem 1.25rem;
+        padding-right: 3rem;
         background-color: #f5f7f8;
         border-radius: .1rem;
 
@@ -2251,6 +2255,26 @@ a:focus {
           font-weight: 500;
           line-height: 1.28;
           color: #647282;
+        }
+
+        & .dropdown-custom {
+
+          &-trigger {
+            border: none;
+            box-shadow: none;
+            font-size: 1.25rem;
+            line-height: 1.28;
+            color: #657383;
+            padding: 0;
+
+            
+            &:focus,
+            &:active {
+              color: #657383;
+              border: none;
+              box-shadow: none;
+            }
+          }
         }
       }
 
@@ -2554,8 +2578,6 @@ a:focus {
         & .comment-container  {
           padding-left: 1.25rem;
           padding-right: 3rem;
-          // border: 1px solid magenta;
-          //margin: 1.25rem 2.2rem;
           display: inline-flex;
           align-items: center;
           & img {
@@ -2575,7 +2597,7 @@ a:focus {
 
               & .name {
                 margin-right: 1rem;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 1.36;
                 color: #0d0e0d;
               }
