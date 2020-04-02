@@ -2166,6 +2166,7 @@ a:focus {
 // SINGLE USER START
 // ==================================
 .single-user {
+  border-left: 1px solid magenta;
   width: 100%;
   max-width: 109.8rem;
   padding:2.5rem 0;
@@ -2185,6 +2186,7 @@ a:focus {
     }
 
   &-header {
+    margin-bottom: 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2195,7 +2197,7 @@ a:focus {
       align-items: center;
 
       & img {
-        margin-left: .5rem;
+        margin-left: 1.35rem;
         margin-right: 1rem;
         width: 5rem;
         height: 5rem;
@@ -2203,28 +2205,31 @@ a:focus {
       }
 
       & .name {
-        margin-bottom: .3rem;
-        font-size: 1.6rem;
+        margin-bottom: .2rem;
+        font-size: 1.7rem;
         font-weight: 500;
-        line-height: 1.31;
+        line-height: 1.35;
         color: #252525;
 
         & .email {
+
           display: block;
-          font-size: 1.3rem;
-          line-height: 1.38;
+          font-size: 1.4rem;
+          line-height: 1.36;
           color: #383838;
         }
       }
     }
-  }
 
-  & .export-pdf {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    line-height: 1.36;
-    color: #1267fb;
+    & .export-pdf {
+      margin-bottom: .5rem;
+      align-self: flex-end;
+      display: inline-block;
+      //margin-bottom: 1rem;
+      font-size: 1.4rem;
+      line-height: 1.36;
+      color: #1267fb;
+    }
   }
 
   &-body {
@@ -2234,13 +2239,13 @@ a:focus {
 
       &-header {
         margin-bottom: 2.2rem;
-        padding: 1rem 1.2rem;
+        padding: 1rem 1.35rem;
         background-color: #f5f7f8;
 
         & p {
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           font-weight: 500;
-          line-height: 1.33;
+          line-height: 1.28;
           color: #647282;
         }
       }
@@ -2295,6 +2300,7 @@ a:focus {
       & .section-body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 1.7rem;
 
         @include respond(desktop-md) {
           grid-template-columns: repeat(2, 1fr);
@@ -2305,10 +2311,10 @@ a:focus {
         }
 
         & .progress-custom {
-          padding-right: 1rem;
-          padding-left: 1.2rem;
-          margin-right: 2.5rem;
-         padding-top: 2.2rem;
+          border: 1px solid magenta;
+          padding-right: 3.1rem;
+          padding-left: 1.35rem;
+          padding-top: 2.2rem;
 
           &-sub {
             font-size: 1.2rem;
@@ -2393,8 +2399,6 @@ a:focus {
     }
 
     .section-development {
-      //margin: 0 -2rem;
-      //padding: 0 2rem;
       margin-bottom: 3rem;
 
       & .section-header {
@@ -2405,7 +2409,7 @@ a:focus {
         padding: 0 0;
         display: grid;
         grid-template-columns: repeat(3, minmax(30rem, 1fr));
-        grid-gap: 0 0;
+        grid-gap: 0 1.72rem;
         margin-bottom: 2rem;
 
         @include respond(desktop-lg) {
@@ -2419,8 +2423,10 @@ a:focus {
       }
       
       & .graph-card {
-        padding: 1rem 4rem;
-        padding-left: 2.9rem;
+        border: 1px solid magenta;
+        //padding: 1rem 4rem;
+        //padding-left: 2.9rem;
+        padding: .9rem 1.35rem;
         height: 26rem;
 
         @include respond(desktop-lg) {
@@ -2428,7 +2434,7 @@ a:focus {
         }
 
         &-header {
-          margin-left: -1.5rem;
+          //margin-left: -1.5rem;
           height: auto;
           padding: 0;
 
@@ -2452,8 +2458,8 @@ a:focus {
 
         &-body {
           padding-top: 2rem;
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 2.59rem;
+          padding-right: 3.32rem;
           height: calc(100% - 2.6rem);
 
           & .bar {
@@ -2472,12 +2478,12 @@ a:focus {
         }
 
         &:nth-of-type(2) {
-          border-left: 1px solid #E1E1E1;
-          border-right: 1px solid #E1E1E1;
+          // border-left: 1px solid #E1E1E1;
+          // border-right: 1px solid #E1E1E1;
 
-          @include respond(desktop-lg) {
-            border: 0;
-          }
+          // @include respond(desktop-lg) {
+          //   border: 0;
+          // }
         }
       }
 
@@ -2505,6 +2511,7 @@ a:focus {
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
         //grid-gap: 3rem 14rem;
         max-height: 29.2rem;
+        grid-gap: 2.6rem 1.7rem;
 
         overflow-y: scroll;
         scrollbar-width: none; /* Firefox */
@@ -2517,7 +2524,10 @@ a:focus {
         }
 
         & .comment-container  {
-          margin: 1.25rem 2.2rem;
+          padding-left: 1.35rem;
+          padding-right: 3rem;
+          border: 1px solid magenta;
+          //margin: 1.25rem 2.2rem;
           display: inline-flex;
           align-items: center;
           & img {

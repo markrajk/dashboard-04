@@ -1282,6 +1282,7 @@ a:focus {
       border: 0; }
 
 .single-user {
+  border-left: 1px solid magenta;
   width: 100%;
   max-width: 109.8rem;
   padding: 2.5rem 0;
@@ -1299,6 +1300,7 @@ a:focus {
     width: 0;
     height: 0; }
   .single-user-header {
+    margin-bottom: 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -1307,38 +1309,39 @@ a:focus {
       display: inline-flex;
       align-items: center; }
       .single-user-header-info img {
-        margin-left: .5rem;
+        margin-left: 1.35rem;
         margin-right: 1rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%; }
       .single-user-header-info .name {
-        margin-bottom: .3rem;
-        font-size: 1.6rem;
+        margin-bottom: .2rem;
+        font-size: 1.7rem;
         font-weight: 500;
-        line-height: 1.31;
+        line-height: 1.35;
         color: #252525; }
         .single-user-header-info .name .email {
           display: block;
-          font-size: 1.3rem;
-          line-height: 1.38;
+          font-size: 1.4rem;
+          line-height: 1.36;
           color: #383838; }
-  .single-user .export-pdf {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    line-height: 1.36;
-    color: #1267fb; }
+    .single-user-header .export-pdf {
+      margin-bottom: .5rem;
+      align-self: flex-end;
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 1.36;
+      color: #1267fb; }
   .single-user-body .section {
     position: relative; }
     .single-user-body .section-header {
       margin-bottom: 2.2rem;
-      padding: 1rem 1.2rem;
+      padding: 1rem 1.35rem;
       background-color: #f5f7f8; }
       .single-user-body .section-header p {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-weight: 500;
-        line-height: 1.33;
+        line-height: 1.28;
         color: #647282; }
     .single-user-body .section-body {
       overflow-y: auto;
@@ -1375,7 +1378,8 @@ a:focus {
       margin-bottom: 0; }
     .single-user-body .section-averages .section-body {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0 1.7rem; }
       @media (max-width: 991px) {
         .single-user-body .section-averages .section-body {
           grid-template-columns: repeat(2, 1fr); } }
@@ -1383,9 +1387,9 @@ a:focus {
         .single-user-body .section-averages .section-body {
           grid-template-columns: repeat(1, 100%); } }
       .single-user-body .section-averages .section-body .progress-custom {
-        padding-right: 1rem;
-        padding-left: 1.2rem;
-        margin-right: 2.5rem;
+        border: 1px solid magenta;
+        padding-right: 3.1rem;
+        padding-left: 1.35rem;
         padding-top: 2.2rem; }
         .single-user-body .section-averages .section-body .progress-custom-sub {
           font-size: 1.2rem;
@@ -1447,7 +1451,7 @@ a:focus {
       padding: 0 0;
       display: grid;
       grid-template-columns: repeat(3, minmax(30rem, 1fr));
-      grid-gap: 0 0;
+      grid-gap: 0 1.72rem;
       margin-bottom: 2rem; }
       @media (max-width: 1199px) {
         .single-user-body .section-development .section-body {
@@ -1456,14 +1460,13 @@ a:focus {
         .single-user-body .section-development .section-body {
           grid-template-columns: repeat(3, 100%); } }
     .single-user-body .section-development .graph-card {
-      padding: 1rem 4rem;
-      padding-left: 2.9rem;
+      border: 1px solid magenta;
+      padding: .9rem 1.35rem;
       height: 26rem; }
       @media (max-width: 1199px) {
         .single-user-body .section-development .graph-card {
           padding: 0 3rem; } }
       .single-user-body .section-development .graph-card-header {
-        margin-left: -1.5rem;
         height: auto;
         padding: 0; }
         .single-user-body .section-development .graph-card-header h4 {
@@ -1481,8 +1484,8 @@ a:focus {
           color: #242527; }
       .single-user-body .section-development .graph-card-body {
         padding-top: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2.59rem;
+        padding-right: 3.32rem;
         height: calc(100% - 2.6rem); }
         .single-user-body .section-development .graph-card-body .bar {
           display: none; }
@@ -1491,12 +1494,6 @@ a:focus {
           width: 1.8rem; }
           .single-user-body .section-development .graph-card-body .bar-info, .single-user-body .section-development .graph-card-body .bar-fill-info {
             bottom: -.8rem; }
-      .single-user-body .section-development .graph-card:nth-of-type(2) {
-        border-left: 1px solid #E1E1E1;
-        border-right: 1px solid #E1E1E1; }
-        @media (max-width: 1199px) {
-          .single-user-body .section-development .graph-card:nth-of-type(2) {
-            border: 0; } }
     .single-user-body .section-development .slider-trigger-left {
       left: 0rem; }
     .single-user-body .section-development .slider-trigger-right {
@@ -1508,6 +1505,7 @@ a:focus {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     max-height: 29.2rem;
+    grid-gap: 2.6rem 1.7rem;
     overflow-y: scroll;
     scrollbar-width: none;
     /* Firefox */
@@ -1518,7 +1516,9 @@ a:focus {
       width: 0;
       height: 0; }
     .single-user-body .section-comments .section-body .comment-container {
-      margin: 1.25rem 2.2rem;
+      padding-left: 1.35rem;
+      padding-right: 3rem;
+      border: 1px solid magenta;
       display: inline-flex;
       align-items: center; }
       .single-user-body .section-comments .section-body .comment-container img {
