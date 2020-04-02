@@ -1222,7 +1222,7 @@ a:focus {
         }
 
         &.active {
-          color: #565656;
+          color: #0d1217;
           font-weight: 500;
         }
 
@@ -1233,6 +1233,11 @@ a:focus {
 
         &:not(:last-child) {
           margin-right: 2.6rem;
+        }
+
+        &:hover {
+          color: #0d1217;
+          text-decoration: underline;
         }
       }
     }

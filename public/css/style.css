@@ -693,13 +693,16 @@ a:focus {
           .header-bottom .choose a span {
             display: none; } }
         .header-bottom .choose a.active {
-          color: #565656;
+          color: #0d1217;
           font-weight: 500; }
         .header-bottom .choose a i {
           margin-right: 0.8rem;
           font-size: 1.8rem; }
         .header-bottom .choose a:not(:last-child) {
           margin-right: 2.6rem; }
+        .header-bottom .choose a:hover {
+          color: #0d1217;
+          text-decoration: underline; }
     .header-bottom .dropdown {
       margin-right: 1.2rem; }
     .header-bottom .dropdown-toggle {
