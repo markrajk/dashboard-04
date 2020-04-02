@@ -1338,6 +1338,8 @@ a:focus {
       font-size: 1.4rem;
       line-height: 1.36;
       color: #1267fb; }
+      .single-user-header .export-pdf:hover, .single-user-header .export-pdf:focus {
+        text-decoration: underline; }
   .single-user-body .section {
     position: relative; }
     .single-user-body .section-header {

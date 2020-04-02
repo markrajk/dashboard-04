@@ -2238,6 +2238,11 @@ a:focus {
       font-size: 1.4rem;
       line-height: 1.36;
       color: #1267fb;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 
