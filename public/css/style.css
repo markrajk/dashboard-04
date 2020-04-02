@@ -694,7 +694,7 @@ a:focus {
             display: none; } }
         .header-bottom .choose a.active {
           color: #565656;
-          font-weight: 700; }
+          font-weight: 500; }
         .header-bottom .choose a i {
           margin-right: 0.8rem;
           font-size: 1.8rem; }
