@@ -1361,6 +1361,8 @@ a:focus {
         line-height: 1.28;
         color: #657383;
         padding: 0; }
+        .single-user-body .section-header .dropdown-custom-trigger i {
+          margin-left: .3rem; }
         .single-user-body .section-header .dropdown-custom-trigger:focus, .single-user-body .section-header .dropdown-custom-trigger:active {
           color: #657383;
           border: none;
@@ -1395,7 +1397,7 @@ a:focus {
       .single-user-body .section .slider-trigger-right {
         right: -1rem; }
   .single-user-body .section-averages {
-    margin-bottom: 4.4rem; }
+    margin-bottom: 4.2rem; }
     .single-user-body .section-averages .section-header {
       margin-bottom: 0; }
     .single-user-body .section-averages .section-body {
@@ -1431,13 +1433,15 @@ a:focus {
             line-height: 1.3;
             color: #1f1f1f; }
           .single-user-body .section-averages .section-body .progress-custom-info .up, .single-user-body .section-averages .section-body .progress-custom-info .down {
+            display: flex;
+            align-items: center;
             margin-right: -.15rem;
             margin-bottom: -1rem;
             font-size: 1.25rem;
             font-weight: 500;
             line-height: 1.33; }
             .single-user-body .section-averages .section-body .progress-custom-info .up i, .single-user-body .section-averages .section-body .progress-custom-info .down i {
-              margin-right: .1rem;
+              margin-right: .5rem;
               font-size: .8rem;
               display: inline-flex;
               align-items: center;
@@ -1473,9 +1477,9 @@ a:focus {
             .single-user-body .section-averages .section-body .progress-custom-bar-fill.bad {
               background-color: #fd1f27; }
   .single-user-body .section-development {
-    margin-bottom: 3.3rem; }
+    margin-bottom: 3rem; }
     .single-user-body .section-development .section-header {
-      margin-bottom: 2rem; }
+      margin-bottom: 1.8rem; }
     .single-user-body .section-development .section-body {
       padding: 0 0;
       display: grid;
@@ -1524,7 +1528,7 @@ a:focus {
           width: 1.8rem; }
           .single-user-body .section-development .graph-card-body .bar-info, .single-user-body .section-development .graph-card-body .bar-fill-info {
             font-family: "HankRnd-Bold";
-            font-size: 1rem;
+            font-size: 1.025rem;
             bottom: -1rem; }
       .single-user-body .section-development .graph-card:nth-of-type(1) {
         border-right: 1.5px solid rgba(237, 237, 237, 0.75); }

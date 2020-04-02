@@ -2272,6 +2272,10 @@ a:focus {
             color: #657383;
             padding: 0;
 
+            & i {
+              margin-left: .3rem;
+            }
+
             
             &:focus,
             &:active {
@@ -2323,7 +2327,7 @@ a:focus {
     }
 
     & .section-averages {
-      margin-bottom: 4.4rem;
+      margin-bottom: 4.2rem;
 
       & .section-header {
         margin-bottom: 0;
@@ -2376,6 +2380,8 @@ a:focus {
             & .up,
             & .down {
               //margin-left: .5rem;
+              display: flex;
+              align-items: center;
               margin-right: -.15rem;
               margin-bottom: -1rem;
               font-size: 1.25rem;
@@ -2384,7 +2390,7 @@ a:focus {
 
               & i {
                 //margin-bottom: -.1rem;
-                margin-right: .1rem;
+                margin-right: .5rem;
                 font-size: .8rem;
                 display: inline-flex;
                 align-items: center;
@@ -2445,10 +2451,10 @@ a:focus {
     }
 
     .section-development {
-      margin-bottom: 3.3rem;
+      margin-bottom: 3rem;
 
       & .section-header {
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
       }
 
       & .section-body {
@@ -2518,7 +2524,7 @@ a:focus {
 
             &-info {
               font-family: "HankRnd-Bold";
-              font-size: 1rem;
+              font-size: 1.025rem;
               bottom: -1rem;
             }
           }
