@@ -1530,7 +1530,7 @@ a:focus {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     max-height: 29.2rem;
-    grid-gap: 2.5rem 1.7rem;
+    grid-gap: 2.6rem 1.72rem;
     overflow-y: scroll;
     scrollbar-width: none;
     /* Firefox */
@@ -1546,9 +1546,9 @@ a:focus {
       display: inline-flex;
       align-items: center; }
       .single-user-body .section-comments .section-body .comment-container img {
-        margin-right: 1.5rem;
-        width: 4.55rem;
-        height: 4.55rem;
+        margin-right: 1.8rem;
+        width: 4.35rem;
+        height: 4.35rem;
         border-radius: 50%; }
       .single-user-body .section-comments .section-body .comment-container .comment {
         width: 100%; }
@@ -1557,7 +1557,7 @@ a:focus {
           display: flex;
           align-items: center; }
           .single-user-body .section-comments .section-body .comment-container .comment-header .name {
-            margin-right: 1.5rem;
+            margin-right: 1rem;
             font-weight: 700;
             line-height: 1.36;
             color: #0d0e0d; }
@@ -1566,9 +1566,11 @@ a:focus {
             letter-spacing: -0.27px;
             color: #657383; }
         .single-user-body .section-comments .section-body .comment-container .comment-text {
+          font-weight: 400;
+          margin-top: .4rem;
           font-size: 1.3rem;
           line-height: 1.38;
-          color: #000000; }
+          color: rgba(0, 0, 0, 0.9); }
 
 @media (max-width: 1024px) {
   body,
