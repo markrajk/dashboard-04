@@ -1286,8 +1286,9 @@ a:focus {
   max-width: 109.8rem;
   padding: 2.5rem 0;
   border-top: 1px solid #e1e1e1;
+  z-index: 100;
   max-height: calc(100vh - 20rem);
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
@@ -1438,8 +1439,6 @@ a:focus {
             .single-user-body .section-averages .section-body .progress-custom-bar-fill.ok {
               background: linear-gradient(to right, #ffd00a -26%, #ffc812 58%); }
   .single-user-body .section-development {
-    margin: 0 -2rem;
-    padding: 0 2rem;
     margin-bottom: 3rem; }
     .single-user-body .section-development .section-header {
       margin-bottom: 2rem; }
@@ -1497,10 +1496,6 @@ a:focus {
         @media (max-width: 1199px) {
           .single-user-body .section-development .graph-card:nth-of-type(2) {
             border: 0; } }
-    .single-user-body .section-development .slider-trigger-left {
-      left: 2rem; }
-    .single-user-body .section-development .slider-trigger-right {
-      right: 2rem; }
   .single-user-body .section-comments .section-header {
     margin-bottom: 0; }
   .single-user-body .section-comments .section-body {

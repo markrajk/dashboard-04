@@ -2170,9 +2170,10 @@ a:focus {
   max-width: 109.8rem;
   padding:2.5rem 0;
   border-top: 1px solid #e1e1e1;
+  z-index: 100;
   max-height: calc(100vh - 20rem);
 
-  overflow-y: scroll;
+  overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
 
@@ -2391,8 +2392,8 @@ a:focus {
     }
 
     .section-development {
-      margin: 0 -2rem;
-      padding: 0 2rem;
+      //margin: 0 -2rem;
+      //padding: 0 2rem;
       margin-bottom: 3rem;
 
       & .section-header {
@@ -2479,16 +2480,16 @@ a:focus {
         }
       }
 
-      & .slider-trigger {
+      // & .slider-trigger {
         
-        &-left {
-          left: 2rem;
-        }
+      //   &-left {
+      //     left: 2rem;
+      //   }
 
-        &-right {
-          right: 2rem;
-        }
-      }
+      //   &-right {
+      //     right: 2rem;
+      //   }
+      // }
     }
 
     & .section-comments {
