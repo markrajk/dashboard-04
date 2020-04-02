@@ -2172,8 +2172,9 @@ a:focus {
   border-top: 1px solid #e1e1e1;
   z-index: 100;
   max-height: calc(100vh - 20rem);
+  z-index: 0;
 
-  overflow-y: auto;
+    overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
 
@@ -2246,7 +2247,7 @@ a:focus {
 
       &-body {
         //padding: 0 1.2rem;
-        overflow: scroll;
+        overflow-y: auto;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* Internet Explorer 10+ */
 
@@ -2480,16 +2481,16 @@ a:focus {
         }
       }
 
-      // & .slider-trigger {
+      & .slider-trigger {
         
-      //   &-left {
-      //     left: 2rem;
-      //   }
+        &-left {
+          left: 0rem;
+        }
 
-      //   &-right {
-      //     right: 2rem;
-      //   }
-      // }
+        &-right {
+          right: 0rem;
+        }
+      }
     }
 
     & .section-comments {
@@ -2620,6 +2621,16 @@ a:focus {
         }
       }
   }
+
+  // &.clearfix:before,
+  // &.clearfix:after {
+  //     content: ".";    
+  //     display: block;    
+  //     height: 0;    
+  //     overflow: hidden; 
+  // }
+  // &.clearfix:after { clear: both; }
+  // &.clearfix { zoom: 1; } /* IE < 8 */
 }
 // ==================================
 // SINGLE USER END

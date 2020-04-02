@@ -1288,6 +1288,7 @@ a:focus {
   border-top: 1px solid #e1e1e1;
   z-index: 100;
   max-height: calc(100vh - 20rem);
+  z-index: 0;
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -1340,7 +1341,7 @@ a:focus {
         line-height: 1.33;
         color: #647282; }
     .single-user-body .section-body {
-      overflow: scroll;
+      overflow-y: auto;
       scrollbar-width: none;
       /* Firefox */
       -ms-overflow-style: none;
@@ -1496,6 +1497,10 @@ a:focus {
         @media (max-width: 1199px) {
           .single-user-body .section-development .graph-card:nth-of-type(2) {
             border: 0; } }
+    .single-user-body .section-development .slider-trigger-left {
+      left: 0rem; }
+    .single-user-body .section-development .slider-trigger-right {
+      right: 0rem; }
   .single-user-body .section-comments .section-header {
     margin-bottom: 0; }
   .single-user-body .section-comments .section-body {
