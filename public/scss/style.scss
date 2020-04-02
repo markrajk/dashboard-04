@@ -2203,13 +2203,14 @@ a:focus {
 
       & img {
         margin-left: 1.25rem;
-        margin-right: 1.2rem;
+        //margin-right: 1.2rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
       }
 
       & .name {
+        margin-left: 1.3rem;
         margin-bottom: .2rem;
         font-size: 1.7rem;
         font-weight: 500;
